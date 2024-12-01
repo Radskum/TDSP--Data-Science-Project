@@ -1,14 +1,16 @@
-***Crash Risk Prediction and Analysis:***
+### ***Crash Risk Prediction and Analysis:***
 
 The Transportation Data Science Project (TDSP) leverages open data to create data-driven insights aimed at improving road safety. Through this project, participants use data science techniques such as data cleaning, geospatial analysis, and time-series analysis to assess road conditions, contributing factors, and more. By engaging in real-world datasets, learners are equipped to build analytical models for safer transportation. The project fosters collaboration and learning, offering different tracks for learners based on their experience, with the opportunity to present findings to mentors from the U.S. Department of Transportation.
 https://nebigdatahub.org/nsdc/tdsp/
 
 This project aims to predict high-risk crash locations and analyze contributing factors using machine learning techniques. By leveraging historical crash data and various features such as geographic location, crash severity, and contributing factors, the goal is to create a predictive model that can forecast future crashes. We use the XGBoost algorithm to train the model, and visualize the results using interactive maps and heatmaps to highlight high-risk zones. This approach can be used to improve traffic safety by identifying areas that require intervention.
 
-**Dataset**
+## **Dataset:**
+
 https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95/about_data
 
-**Project Structure:**
+## **Project Structure:**
+
 *Data Preprocessing:*
 Clean and process the crash data, handling missing values and scaling relevant features.
 
@@ -21,7 +23,8 @@ Train an XGBoost model to predict high-risk crashes based on the available featu
 *Heatmap and Map Visualization:*
 Visualize the crash data using seaborn heatmaps and interactive folium maps, displaying high-risk crash locations and contributing factors.
 
-**Dependencies**
+## **Dependencies:**
+
 Python 3.x
 pandas
 numpy
@@ -31,7 +34,8 @@ folium
 scikit-learn
 xgboost
 
-**Features**
+## **Features:**
+
 *Crash Severity:*
 The dataset includes information on the severity of crashes, used as a key feature in predicting high-risk zones.
 
@@ -48,7 +52,8 @@ The XGBoost model predicts high-risk crash zones based on historical data, takin
 Heatmap: A heatmap is used to show areas with the highest crash severity by day and hour.
 Folium Map: Interactive map visualizes high-risk areas and allows inspection of contributing factors for each crash.
 
-**Results**
+## **Results:**
+
 The XGBoost model achieved an accuracy of 76.40% in predicting high-risk crash locations.
 Heatmaps show patterns in crash severity, with high-risk periods identified from 3 PM to 6 PM and Wednesday to Friday.
 The interactive folium map reveals the contributing factors for high-risk crashes, such as poor road conditions, enabling targeted interventions.
@@ -66,7 +71,8 @@ Predicting future possible crashes based on train model
 understanding contributing factor on future crash to prevent them from happening 
 
 
-**Future Improvements**
+## **Future Improvements:**
+
 *Incorporate More Features:*
 Add additional features like traffic volume or time of day, and integrate real-time data (weather conditions, traffic updates) to improve predictions.
 
@@ -79,7 +85,8 @@ Explore other models such as LightGBM or Random Forests, or combine them using e
 *Explainability:*
 Use tools like SHAP or LIME to interpret the model’s predictions and better understand the factors influencing crash severity.
 
-**Conclusion**
+## **Conclusion:**
+
 This project provides valuable insights into crash patterns and identifies high-risk locations where interventions can be implemented. By leveraging machine learning techniques and data visualization tools, this approach can help improve traffic safety and reduce the occurrence of severe crashes. Future improvements will continue to enhance the model’s accuracy and predictive power, providing more actionable insights for traffic safety management.
 
 
